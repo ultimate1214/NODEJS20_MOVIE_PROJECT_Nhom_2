@@ -1,0 +1,23 @@
+{
+  "name": "NODEJS20_MOVIE_PROJECT_Nhom_2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ultimate1214/NODEJS20_MOVIE_PROJECT_Nhom_2.git",
+  "author": "ultimatekid1214 <viectrung@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.1",
+    "jwt": "^0.2.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "sequelize-cli": "^6.4.1"
+  }
+}
