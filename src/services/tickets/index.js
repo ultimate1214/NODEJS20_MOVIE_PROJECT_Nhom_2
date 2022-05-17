@@ -8,6 +8,7 @@ const {
   VeVM,
   MaCumRap,
   DanhSachGhe,
+  NguoiDungVM,
 } = require("./../../../models");
 
 const bookTicket = async (data) => {
@@ -72,22 +73,21 @@ const getListTicketRoom = async (maLichChieu) => {
     });
     deleteRedundancyAtrributes(movie.dataValues);
 
-    let chairList = await DanhSachGhe.findAll();
-    //   {
-    //   where: {
-    //     maRap: cinema.maRap,
-    //   },
-    // }
-    // ();
-    console.log({ data: chairList });
-    deleteRedundancyAtrributes(chairList.dataValues);
+    let chairList = await DanhSachGhe.findAll({
+      where: {
+        maRap: cinema.maRap,
+      },
+    });
+    const chair = chairList.map((e, index) =>
+      deleteRedundancyAtrributes(e.dataValues)
+    );
     const ticketRoom = {
       thongTinPhim: {
         maLichChieu,
         ...cinemas.dataValues,
         ...movie.dataValues,
       },
-      danhSachGhe: chairList,
+      danhSachGhe: chair,
     };
     return ticketRoom;
   } catch (error) {

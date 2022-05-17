@@ -182,6 +182,8 @@ userRouter.post(
 );
 
 userRouter.put("/CapNhatThongTinNguoiDung", authenticate, async (req, res) => {
+  const { user } = req;
+  const { taiKhoan } = req.body;
   if (user.taiKhoan !== taiKhoan) {
     return res
       .status(500)

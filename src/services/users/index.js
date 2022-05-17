@@ -76,7 +76,6 @@ const registerUser = async (req, res) => {
 const getAllUsers = async () => {
   try {
     const data = await NguoiDungVM.findAll();
-
     const user = data.map((element, index) => element.dataValues);
     return user;
   } catch (error) {
