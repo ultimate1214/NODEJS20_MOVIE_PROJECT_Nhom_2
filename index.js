@@ -9,8 +9,9 @@ app.use(express.json());
 
 app.use("/api", rootRouter);
 
-app.listen(SYSTEM.PORT, () => {
-  console.log(`listening on port ${SYSTEM.PORT}`);
+const port = process.env.PORT || SYSTEM.PORT;
+app.listen(port, () => {
+  console.log(`listening on port ${port}`);
 });
 
 //test connection
