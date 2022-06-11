@@ -1,23 +1,23 @@
 {
-  "development": {
-    "username": "root",
-    "password": "`1221`",
-    "database": "nodejs20_movie_project_nhom_2",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "be9ac422f8607f",
-    "password": "82a0087a",
-    "database": "heroku_b7b1ce1a03c963f",
-    "host": "us-cdbr-east-05.cleardb.net",
-    "dialect": "mysql"
-  }
+    "development": {
+        "username": "root",
+        "password": "12345678",
+        "database": "nodejs20_movie_project_nhom_2",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "database_test",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "be9ac422f8607f",
+        "password": "82a0087a",
+        "database": "heroku_b7b1ce1a03c963f",
+        "host": "us-cdbr-east-05.cleardb.net",
+        "dialect": "mysql"
+    }
 }
