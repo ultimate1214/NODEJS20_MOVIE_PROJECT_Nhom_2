@@ -1,6 +1,6 @@
 "use strict";
 const express = require("express");
-const { getThongTinHeThongRap, getThongTinLichChieu, getThongTinCumRapTheoHeThong } = require("../../services/rap");
+const { getThongTinHeThongRap, getThongTinLichChieu, getThongTinCumRapTheoHeThong, getThongTinLichChieuPhim } = require("../../services/rap");
 const heThongRapRouter = express.Router();
 
 heThongRapRouter.get('/LayThongTinHeThongRap', async(req, res) => {
@@ -34,6 +34,17 @@ heThongRapRouter.get('/LayThongTinCumRapTheoHeThong', async(req, res) => {
         })
     }
     res.status(200).send({ statusCode: 200, message: "Xử lý thành công!", content: cumRap })
+})
+
+heThongRapRouter.get('/LayThongTinLichChieuPhim', async(req, res) => {
+    const { maPhim } = req.query
+    const lichChieu = await getThongTinLichChieuPhim(maPhim)
+    if (!lichChieu) {
+        return res.status(400).send({
+            message: "Không tìm thấy lich chieu"
+        })
+    }
+    res.status(200).send({ statusCode: 200, message: "Xử lý thành công!", content: lichChieu })
 })
 
 module.exports = heThongRapRouter;

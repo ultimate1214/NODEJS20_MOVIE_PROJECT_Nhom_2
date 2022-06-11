@@ -68,10 +68,28 @@ const getThongTinCumRapTheoHeThong = async(maHeThongRap) => {
 
 }
 
+const getThongTinLichChieuPhim = async(maPhim) => {
+    try {
+        if (!maPhim) {
+            return null
+        }
+        const lichChieu = await LichChieuInsert.findAll({
+            where: {
+                maPhim: maPhim
+            },
+
+        })
+        return lichChieu
+    } catch (err) {
+        console.log(err)
+        return null
+    }
+}
 
 
 module.exports = {
     getThongTinHeThongRap,
     getThongTinLichChieu,
-    getThongTinCumRapTheoHeThong
+    getThongTinCumRapTheoHeThong,
+    getThongTinLichChieuPhim
 }
