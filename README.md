@@ -15,7 +15,7 @@ C- Phân công công việc:
       - DatVe
       - LayDanhSachPhongVe
       - TaoLichChieu
-      - 
+      
     b. QuanLyNguoiDung:
       - LayDanhSachLoaiNguoiDung
       - DangNhap
@@ -31,7 +31,7 @@ C- Phân công công việc:
       - XoaNguoiDung
     
  * Đỗ Quang Khải phụ trách:
- *
+ 
     a. QuanLyPhim:
       - LayDanhSachBanner
       - LayDanhSachPhim
