@@ -10,10 +10,12 @@ B- Thành viên tham gia nhóm 2:
  
 C- Phân công công việc:
  * Lê Minh Trung phụ trách:
+ 
     a. QuanLyDatVe:
       - DatVe
       - LayDanhSachPhongVe
       - TaoLichChieu
+      - 
     b. QuanLyNguoiDung:
       - LayDanhSachLoaiNguoiDung
       - DangNhap
@@ -29,6 +31,7 @@ C- Phân công công việc:
       - XoaNguoiDung
     
  * Đỗ Quang Khải phụ trách:
+ *
     a. QuanLyPhim:
       - LayDanhSachBanner
       - LayDanhSachPhim
@@ -40,6 +43,7 @@ C- Phân công công việc:
       - XP
       - XoaPhim
       - LayThongTinPhim
+      
     b. QuanLyRap:
       - LayThongTinHeThongRap
       - LayThongTinCumRapTheoHeThong
