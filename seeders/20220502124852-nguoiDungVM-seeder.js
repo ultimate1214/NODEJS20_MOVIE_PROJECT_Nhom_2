@@ -15,6 +15,30 @@ module.exports = {
       "NguoiDungVMs",
       [
         {
+          taiKhoan: "minhtrung_admin",
+          hoTen: "string12341324",
+          email: "minhtrung_admin@gmail.com",
+          soDt: "9999999991",
+          maNhom: "GP01",
+          matKhau:
+            "$2a$10$eELwpm7vW3UsXLD8eYQNgOXQTxHLJ2K0t/C7GWbZ6ZA1QGL.HIeOi",
+          maLoaiNguoiDung: "QuanTri",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          taiKhoan: "minhtrung_user",
+          hoTen: "string12341324",
+          email: "minhtrung_user@gmail.com",
+          soDt: "9999999991",
+          maNhom: "GP01",
+          matKhau:
+            "$2a$10$7mPLC4pSehlCqpIp05vEr.7QrFfc1GxdFU92tOdtLvzUBBpTFRuka",
+          maLoaiNguoiDung: "KhachHang",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
           taiKhoan: "0941234234",
           hoTen: "string12341324",
           email: "lamhoang1@gmail.com",
