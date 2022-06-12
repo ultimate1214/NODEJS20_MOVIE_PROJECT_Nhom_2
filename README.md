@@ -1,8 +1,8 @@
 # NODEJS20_MOVIE_PROJECT_Nhom_2
 
 A- Thông tin đăng nhập:
-  * Tài khoản admin:
-  * Tài khoản user:
+  * Tài khoản admin: minhtrung_admin pass: 123456
+  * Tài khoản user: minhtrung_user pass: 123456
   
 B- Thành viên tham gia nhóm 2: 
  * Lê Minh Trung
