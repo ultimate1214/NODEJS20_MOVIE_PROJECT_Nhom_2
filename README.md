@@ -50,6 +50,10 @@ D- Link production:
     https://nodejs20-movie-project-nhom-2.herokuapp.com/api
     
 E- Link video:
+    https://www.youtube.com/watch?v=s91iPP2GZlw
+    
+F- Link file postman:
+    https://drive.google.com/file/d/1DckmkesKdV1s7jtLorNcyY9K5ucKuebQ/view?usp=sharing
 
     
     
