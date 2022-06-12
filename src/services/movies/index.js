@@ -1,7 +1,6 @@
 "use strict";
 const { Op } = require('sequelize');
 const { Phim, Banner } = require('../../../models')
-const { deleteRedundancyAtrributes } = require("../utils");
 
 const getMovieList = async(maNhom, tenPhim) => {
     try {

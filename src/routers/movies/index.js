@@ -59,7 +59,6 @@ movieRouter.get('/LayDanhSachBanner', async(req, res) => {
             message: "Không tìm thấy banner"
         })
     }
-    console.log(banner)
     return res.status(200).send({ statusCode: 200, message: "Xử lý thành công!", content: banner })
 })
 
